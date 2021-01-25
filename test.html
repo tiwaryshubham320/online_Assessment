@@ -1,0 +1,173 @@
+<html>
+	<head>
+		<title>Test</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script>
+			function myfun()
+			{
+				var min = 10;
+				var sec = 1;
+				
+				setInterval(printMsg, 1000);
+				
+				function printMsg()
+				{
+					sec--;
+					if(sec == 0)
+					{
+						min--;
+						sec = 60;
+					}
+					
+					if (min==0 && sec==1)
+					{
+						submit();
+						window.open("index.html");
+					}
+					document.getElementById("timer").innerHTML = min + " Minutes : " + sec + " seconds ";
+				}
+			}
+			function submit()
+			{
+				var count  = 0;
+				if(document.getElementById("customRadio1a").checked == true)
+					count++;
+				
+				if(document.getElementById("customRadio2c").checked == true)
+					count++;
+				
+				if(document.getElementById("customRadio3b").checked == true)
+					count++;
+				
+				if(document.getElementById("customRadio4a").checked == true)
+					count++;
+				
+				if(document.getElementById("customRadio5d").checked == true)
+					count++;
+					
+				
+				alert("Your score is: "+count);
+				window.open("index.html");
+			}
+		</script>
+	</head>
+	<body onload="myfun()">
+		<div class="container-fluid bg-dark text-white p-3">
+			<p align="right" id="timer" > </p>
+		</div>
+		
+		<div class="container-fluid mt-3">
+			
+			<form>
+				
+				<p><b>Q.1)</b> X's income 3/4 of Y's income and X's expenditure is 4/5 of Y's expenditure. If X's income is 9/10 of Y,s expenditure, find the ratio of X's savings to Y's savings.</p>
+				<div class="form-check form-check-inline">
+					<input type="radio" class="form-check-input" id="customRadio1a" name="q1">
+					<label class="form-check-label" for="customRadio1a">1:2</label>
+				</div>
+				
+				<div class="form-check form-check-inline">
+					<input type="radio" class="form-check-input" id="customRadio1b" name="q1">
+					<label class="form-check-label" for="customRadio1b">2:1</label>
+				</div>
+				
+				<div class="form-check form-check-inline">
+					<input type="radio" class="form-check-input" id="customRadio1c" name="q1">
+					<label class="form-check-label" for="customRadio1c">1:4</label>
+				</div>
+				
+				<div class="form-check form-check-inline">
+					<input type="radio" class="form-check-input" id="customRadio1d" name="q1">
+					<label class="form-check-label" for="customRadio1d">No of these</label>
+				</div><br><br>
+			
+			
+				<p><b>Q.2)</b> Given that sum of 3-digit number abc, bca and cab is the product of just three distinct prime numbers, its maximum value can  be equal to</p>
+				<div class="form-check form-check-inline">
+					<input type="radio" class="form-check-input" id="customRadio2a" name="q2">
+					<label class="form-check-label" for="customRadio2a">2109</label>
+				</div>
+				
+				<div class="form-check form-check-inline">
+					<input type="radio" class="form-check-input" id="customRadio2b" name="q2">
+					<label class="form-check-label" for="customRadio2b">2337</label>
+				</div>
+				
+				<div class="form-check form-check-inline">
+					<input type="radio" class="form-check-input" id="customRadio2c" name="q2">
+					<label class="form-check-label" for="customRadio2c">2553</label>
+				</div>
+				
+				<div class="form-check form-check-inline">
+					<input type="radio" class="form-check-input" id="customRadio2d" name="q2">
+					<label class="form-check-label" for="customRadio2d">No of these</label>
+				</div><br><br>
+				
+				<p><b>Q.3)</b> At a telephone exchange, three phones ring at intervals of 20 sec, 24 sec and 30 seconds. If they ring together at 11:25 a.m, when will they next ring together?</p>
+				<div class="form-check form-check-inline">
+					<input type="radio" class="form-check-input" id="customRadio3a" name="q3">
+					<label class="form-check-label" for="customRadio3a">11:29 a.m</label>
+				</div>
+				
+				<div class="form-check form-check-inline">
+					<input type="radio" class="form-check-input" id="customRadio3b" name="q3">
+					<label class="form-check-label" for="customRadio3b">11:27 a.m</label>
+				</div>
+				
+				<div class="form-check form-check-inline">
+					<input type="radio" class="form-check-input" id="customRadio3c" name="q3">
+					<label class="form-check-label" for="customRadio3c">11:51 a.m</label>
+				</div>
+				
+				<div class="form-check form-check-inline">
+					<input type="radio" class="form-check-input" id="customRadio3d" name="q3">
+					<label class="form-check-label" for="customRadio3d">12:29 p.m</label>
+				</div><br><br>
+				
+				<p><b>Q.4)</b> Select the time that would depict the correct mirror imagge of 9:30 on a clock.</p>
+				<div class="form-check form-check-inline">
+					<input type="radio" class="form-check-input" id="customRadio4a" name="q4">
+					<label class="form-check-label" for="customRadio4a">2:30</label>
+				</div>
+				
+				<div class="form-check form-check-inline">
+					<input type="radio" class="form-check-input" id="customRadio4b" name="q4">
+					<label class="form-check-label" for="customRadio4b">6:30</label>
+				</div>
+				
+				<div class="form-check form-check-inline">
+					<input type="radio" class="form-check-input" id="customRadio4c" name="q4">
+					<label class="form-check-label" for="customRadio4c">7:30</label>
+				</div>
+				
+				<div class="form-check form-check-inline">
+					<input type="radio" class="form-check-input" id="customRadio4d" name="q4">
+					<label class="form-check-label" for="customRadio4d">4:30</label>
+				</div><br><br>
+				
+				<p><b>Q.5)</b> Look at this series: 8, 6, 9, 23, 87, ... What number should come next?</p>
+				<div class="form-check form-check-inline">
+					<input type="radio" class="form-check-input" id="customRadio5a" name="q5">
+					<label class="form-check-label" for="customRadio5a">128</label>
+				</div>
+				
+				<div class="form-check form-check-inline">
+					<input type="radio" class="form-check-input" id="customRadio5b" name="q5">
+					<label class="form-check-label" for="customRadio5b">226</label>
+				</div>
+				
+				<div class="form-check form-check-inline">
+					<input type="radio" class="form-check-input" id="customRadio5c" name="q5">
+					<label class="form-check-label" for="customRadio5c">324</label>
+				</div>
+				
+				<div class="form-check form-check-inline">
+					<input type="radio" class="form-check-input" id="customRadio5d" name="q5">
+					<label class="form-check-label" for="customRadio5d">429</label>
+				</div><br><br>
+				
+			</form>
+		</div>
+		<button class="btn btn-primary" onclick="submit()">Submit</button>
+	</body>
+</html>
